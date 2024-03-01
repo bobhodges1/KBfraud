@@ -2,7 +2,7 @@
 
 ## Question 1: How many transactions are not flagged as fraud that are fraud? Explain what false negatives are and why they are bad in the context of this analysis.
 
-**Answer: 8197**
+**Answer: 8197. False negatives are when a system has failed to find a positive case, say a medical test returning negative for an illness when the patient actually has that illness. They are bad in the context of this dataset as customers who have commited fraud won't be flagged as having done so. This could mean that additional security checks aren't carried out, the relevant authorities potentially not informed, and the financial organisation may continue to do business with this individual, increasing their exposure to fraud risk. If the level of fraud that has gone undetected is substantial enough, it will lead to reputational damage and fines from the regulatory body. It also undermines internal trust in the system.**
 
 SELECT(*) AS fraud_count FROM transactions
 WHERE isFraud = true AND isFlaggedFraud = false
