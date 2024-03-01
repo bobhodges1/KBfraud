@@ -1,6 +1,6 @@
 ## Breaking Data into Tables
 
-# Creating the transaction_type table with required columns
+### Creating the transaction_type table with required columns
 
 CREATE TABLE transaction_type (
   type_id SERIAL PRIMARY KEY,
