@@ -1,6 +1,6 @@
-## Breaking Data into Tables
+# Breaking Data into Tables
 
-### Creating the transaction_type table with required columns
+## Creating the transaction_type table with required columns
 
 CREATE TABLE transaction_type (
   type_id SERIAL PRIMARY KEY,
@@ -29,7 +29,7 @@ WHERE t.type = tt.type_name;
 ALTER TABLE transactions
 DROP COLUMN type;
 
-#  Creating the accounts table
+##  Creating the accounts table
 
 CREATE TABLE accounts (
 account_id SERIAL PRIMARY KEY,
