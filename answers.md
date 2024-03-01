@@ -1,13 +1,13 @@
-## Answers to SQL based questions in brief
+# Answers to SQL based questions in brief
 
-### Question 1: How many transactions are not flagged as fraud that are fraud? Explain what false negatives are and why they are bad in the context of this analysis.
+## Question 1: How many transactions are not flagged as fraud that are fraud? Explain what false negatives are and why they are bad in the context of this analysis.
 
 **Answer: 8197**
 
 SELECT(*) AS fraud_count FROM transactions
 WHERE isFraud = true AND isFlaggedFraud = false
 
-### Question 2: For fraudulent transactions, what is the median and average amount by transaction type? Explain why these are different. 
+## Question 2: For fraudulent transactions, what is the median and average amount by transaction type? Explain why these are different. 
 
 **Answer:**   
 
@@ -22,11 +22,11 @@ ON tt.type_id = t.type_id
 GROUP BY tt.type_name, t.isFraud
 HAVING t.isFraud = true
 
-### Question 3: Given you answers to Question 2, on which type should we focus first if we want to deal with fraudulent transactions. Why?
+## Question 3: Given you answers to Question 2, on which type should we focus first if we want to deal with fraudulent transactions. Why?
 
 **Answer: 
 
-### Question 4: Is there any origin-destination pair that occurs more than once? If so, is it usually fraudulent? Otherwise, what does it mean there are not repeated occurrences?
+## Question 4: Is there any origin-destination pair that occurs more than once? If so, is it usually fraudulent? Otherwise, what does it mean there are not repeated occurrences?
 
 **Answer: No occurances**
 
