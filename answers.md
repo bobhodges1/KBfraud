@@ -24,11 +24,11 @@ HAVING t.isFraud = true
 
 ## Question 3: Given you answers to Question 2, on which type should we focus first if we want to deal with fraudulent transactions. Why?
 
-**Answer: 
+**Answer: We should focus on CASH OUT and TRANSFER as only these had fraudulent transactions. CASH OUT is slightly higher so we could focus on this first, and this is likely money leaving the bank so more difficult to freeze/call back etc.** 
 
 ## Question 4: Is there any origin-destination pair that occurs more than once? If so, is it usually fraudulent? Otherwise, what does it mean there are not repeated occurrences?
 
-**Answer: No occurances**
+**Answer: No occurrences**
 
 SELECT namedest, nameorig, count(*) AS number_of_transactions
 FROM transactions

@@ -1,0 +1,39 @@
+body {
+    background-color: #4caab3;
+    /* This sets the bluey-green background color */
+    color: #ffffff;
+    /* This sets the text color to white */
+    font-family: 'Arial', sans-serif;
+    /* A common presentation font, change as needed */
+}
+
+h1 {
+    font-size: 36px;
+    /* Adjust the size as needed */
+    text-align: center;
+    border-bottom: 2px dotted #ffffff;
+    /* This creates a dotted line under the heading */
+    padding-bottom: 10px;
+    /* Gives some space under the heading */
+}
+
+ul {
+    list-style: none;
+    /* This removes the default list styling */
+}
+
+li {
+    font-size: 24px;
+    /* Adjust the size as needed */
+    margin-bottom: 20px;
+    /* Adds space between list items */
+}
+
+li::before {
+    content: "-";
+    /* Adds a hyphen before list item */
+    color: #ffffff;
+    /* Ensures the hyphen is white */
+    margin-right: 10px;
+    /* Adds a space after the hyphen */
+}
